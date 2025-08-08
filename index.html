@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
@@ -38,8 +39,9 @@
       margin-bottom: 1.5rem;
     }
     .profile-img {
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      max-width: 120px;
+      height: auto;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 1rem;
@@ -47,6 +49,7 @@
     }
     video {
       max-width: 100%;
+      height: auto;
       border-radius: 10px;
       margin-bottom: 1rem;
       box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
@@ -71,12 +74,23 @@
       color: #777;
       margin-top: 1rem;
     }
+    /* Responsividade para telas menores */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Ela está te esperando ao vivo 🔥</h1>
-    <img class="profile-img" src="https://files.catbox.moe/fflyvg.webp" alt="Nomadic Angel sensual">
+    <!-- Imagem com link para o GitHub -->
+    <img class="profile-img" src="profile-img" src="https://github.com/nomadic-landing/assets/nomadic_angel.jpg" alt="Nomadic Angel sensual">>
     <video autoplay muted loop playsinline>
       <source src="https://files.catbox.moe/wb6f6d.mp4" type="video/mp4">
       O teu navegador não suporta vídeo.
@@ -88,7 +102,7 @@
     <p class="note">
       Quando uma estrela descansa, outras brilham ainda mais forte ✨
     </p>
-    <a class="cta-button" href="https://go.rmhfrtnd.com?memberId=nomadic&sourceId=ST&onlineModels=Nomadic_Angel&action=sbSignupWithModel&userId=cd8618aa4d7532e92cf284da58824f110cf91de7e4e34c04597d0c45c38f17da" target="_blank" rel="nofollow noopener">
+    <a class="cta-button" href="https://go.rmhfrtnd.com/?memberId=nomadic&sourceId=ST&onlineModels=Nomadic_Angel&action=sbSignupWithModel&userId=cd8618aa4d7532e92cf284da58824f110cf91de7e4e34c04597d0c45c38f17da" target="_blank" rel="nofollow noopener">
       👉 Ver Performers ao Vivo
     </a>
     <div class="footer">
@@ -97,4 +111,3 @@
   </div>
 </body>
 </html>
-
